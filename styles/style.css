@@ -1,0 +1,291 @@
+* {
+    font-family: "Oxanium", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.encabezado .menu {
+    display: flex;
+    gap: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #ffd500;
+    color: #00296b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.col2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+}
+
+.col2>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.cuadricula {
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #001bb6ff;
+    border: 3px solid #001bb6ff;
+    border-radius: 55px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.bloque-texto {
+    padding: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    background-color: transparent;
+}
+
+.cuadricula-img {
+    width: 250px;
+    height: 250px;
+    border: 4px solid #001bb6ff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadricula-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.cuadricula-text {
+    margin: 0 0 15px 0;
+    display: inline-block;
+    background-color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #001bb6ff;
+    border: 3px solid #001bb6ff;
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.col-3 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+    border-left: 1px solid #001bb6ff;
+}
+
+.img-col {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.logo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+.logo-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo-box p {
+    text-align: center;
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+    color: #00296b;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo p {
+    font-size: 14px;
+    text-align: start;
+    font-weight: bold;
+    color: #001bb6ff;
+    padding-left: 10px;
+    border-left: 1px solid #001bb6ff;
+}
+
+#cronograma .col-3 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#cronograma .col-3>div {
+    flex: 1 1 300px;
+    min-width: 250px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    #cronograma .col-3 {
+        flex-direction: column;
+    }
+
+    #cronograma .col-3>div {
+        border-left: none;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    #cronograma iframe {
+        width: 100% !important;
+        height: 200px !important;
+    }
+
+    #cronograma img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.ponencia-card {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+}
+
+#inscripcion {
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    #inscripcion {
+        font-size: 1.5em;
+        top: 25%;
+    }
+}
+
+.col02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 40px;
+    align-items: stretch;
+}
+
+@media (max-width: 768px) {
+    .col02 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .col02 img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.carrusel {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carrusel img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.carrusel img.active {
+    left: 0;
+    opacity: 1;
+}
